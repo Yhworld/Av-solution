@@ -19,7 +19,7 @@ function Navbar() {
             services
           </a>
         </div>
-        <a href="#" className="hidden md:block baseline rounded-full bg-teal-300 p-3 px-6 pt-2">
+        <a href="#" className="hidden md:block baseline rounded-full bg-green-500 p-3 px-6 pt-2 ">
           Get Started
         </a>
       </div>
