@@ -5,5 +5,9 @@
 
 
 body {
+    background-image: url('../src/assets/images/lily-pad-blob.svg');
+    background-repeat: no-repeat;
+    background-size: 800px;
     font-family: "Roboto",sans-serif;
+    background-position: 90% -25%;
 }
