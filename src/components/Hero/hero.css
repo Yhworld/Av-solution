@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/jomolhari-3');
 
-h1 {
-    font-family: 'Jomolhari', sans-serif;                                        
+
+#hero-pic {
+    width: 600px;
 }
