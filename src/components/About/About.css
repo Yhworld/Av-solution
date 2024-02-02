@@ -1,0 +1,51 @@
+#about img {
+  width: 400px;
+}
+
+#vertical-text {
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+}
+
+/* #about {
+    background-image: url('../../assets/images/wave.svg');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    font-family: "Poppins",sans-serif;
+    background-position: 90% 5%;
+} */
+
+.vertical-line {
+  border: none;
+  border-left: 3px solid #000; /* Change color as needed */
+  height: 100px; /* Adjust height as needed */
+  margin: 20px auto; /* Adjust margin as needed */
+}
+
+#manage {
+    margin-top:8rem;
+}
+
+/* #learn {
+    margin-top: 2rem;
+} */
+
+.bobo {
+    max-width: 800px;
+    line-height: 2;
+}
+
+@media (max-width: 768px) {
+  #vertical-text {
+    writing-mode: horizontal-tb;
+    text-align: center;
+    transform: rotate(0deg);
+    font-size: 2rem;
+  }
+  .vertical-line {
+        border-left: none; 
+        border-top: 1px solid #000000; 
+        width: 100%; 
+        height: auto; 
+  }
+}
