@@ -1,95 +1,48 @@
 import React from "react";
-// import communication from "../../assets/images/communication.svg";
+import aboutimg1 from "../../assets/images/aboutimg1.jpg";
 import "../About/About.css";
-import AnimatedNumberSection from "./AnimatedNumberSection";
+import Counter from "./Counter";
 
 const About = () => {
   return (
-    <section id="manage">
-      <div className="container flex flex-col px-4 mt-10 mx-auto space-y-12 md:flex-row md:space-y-0">
-        <div className="flex flex-col space-y-12 md:w-1/2">
-          <h2 className="text-4xl font-bold text-center md:text-left">
-            Why choose us
+    <section id="manage" className="container relative mx-auto p-4">
+      <h2 className="text-3xl font-bold md:text-center md:text-5xl text-start">
+        SCALE YOUR TEAM
+        <br />
+        WITH SENIOR ENGINEERS
+        <br />
+        FOR LASTING SUCCESS.
+      </h2>
+      <div
+        id="about-sub"
+        className="container flex flex-col-reverse px-4 mt-10 md:items-center md:justify-between mx-auto space-y-12 md:flex-row md:space-y-0"
+      >
+        <div className="flex flex-col space-y-10">
+          <h2 className="text-4xl pt-8 md:text-4xl font-bold">
+            CUTTING EDGE SOLUTIONS
           </h2>
-          <p className="text-center text-slate-500 md:text-left max-w-md">
-            Manage provides all the functionality your team needs,without the
-            complexity.Our software is tailor-made for modern digital product
-            teams.
+          <p id="about-text" className=" text-gray-500 text-start">
+            Explore a comprehensive suite of audio visual services designed to
+            meet your needs from start to finish. Benefit from our expert
+            consultation and tailored installation solutions
           </p>
           <div>
-            <AnimatedNumberSection title="Customer Satisfaction" targetValue={100}/>
+            <a
+              href="#_"
+              class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-900 rounded-full hover:bg-gray-500 focus:shadow-outline focus:outline-none"
+            >
+              Get a Quotation
+            </a>
           </div>
         </div>
-        <div className="flex flex-col space-y-8 md:w-1/2">
-          <div className="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-            <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent">
-              <div className="flex items-center space-x-2">
-                <div className="px-4 py-2 text-white rounded-full md:py-1 bg-slate-900">
-                  01
-                </div>
-                <h3 className="text-base font-bold md:mb-4 md:hidden">
-                  Comprehensive Audio Solutions
-                </h3>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="hidden mb-4 text-lg font-bold md:block">
-                Comprehensive Audio Solutions
-              </h3>
-              <p className="text-slate-500">
-                Experience tailored audio system consultation and installation
-                services for homes, businesses, and events.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-            <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent">
-              <div className="flex items-center space-x-2">
-                <div className="px-4 py-2 text-white rounded-full md:py-1 bg-slate-900">
-                  02
-                </div>
-                <h3 className="text-base font-bold md:mb-4 md:hidden">
-                  Advanced built-in reports
-                </h3>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="hidden mb-4 text-lg font-bold md:block">
-                Cutting-Edge Video Production
-              </h3>
-              <p className="text-slate-500">
-                Benefit from our expertise in crafting compelling visual
-                narratives, from promotional videos to documentaries and event
-                coverage.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-            <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent">
-              <div className="flex items-center space-x-2">
-                <div className="px-4 py-2 text-white rounded-full md:py-1 bg-slate-900">
-                  03
-                </div>
-                <h3 className="text-base font-bold md:mb-4 md:hidden">
-                  Technological Expertise
-                </h3>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="hidden mb-4 text-lg font-bold md:block">
-                Technological Expertise
-              </h3>
-              <p className="text-slate-500">
-                Access advanced technology and creative solutions from our team
-                of experts dedicated to enhancing your audiovisual experience.
-              </p>
-            </div>
-          </div>
+        <div id="aboutimg" className="md:w-1/2">
+          <img
+            src={aboutimg1}
+            width="1002"
+            height="668"
+            alt=""
+            className="gunther"
+          />
         </div>
       </div>
     </section>

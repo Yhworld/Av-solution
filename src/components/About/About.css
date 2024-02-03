@@ -1,51 +1,44 @@
-#about img {
+/* #about img {
   width: 400px;
-}
-
-#vertical-text {
-  writing-mode: tb-rl;
-  transform: rotate(-180deg);
-}
-
-/* #about {
-    background-image: url('../../assets/images/wave.svg');
-    background-repeat: no-repeat;
-    background-size: 800px;
-    font-family: "Poppins",sans-serif;
-    background-position: 90% 5%;
 } */
-
-.vertical-line {
-  border: none;
-  border-left: 3px solid #000; /* Change color as needed */
-  height: 100px; /* Adjust height as needed */
-  margin: 20px auto; /* Adjust margin as needed */
-}
-
 #manage {
-    margin-top:8rem;
+  font-family: var(--secondary-font);
 }
 
-/* #learn {
-    margin-top: 2rem;
+h2 {
+  font-family: var(--primary-font);
+}
+
+@media (min-width: 768px) {
+  #manage {
+    margin-top:1rem;
+  }
+}
+
+.gunther {
+    object-fit: cover;
+    height: 360px;
+    border-radius: 1rem;
+}
+
+#about-text {
+    width: 32rem;
+}
+
+#aboutimg{
+    max-width: 680px;
+}
+
+/* #about-sub {
+    margin-top: 8rem;
 } */
-
-.bobo {
-    max-width: 800px;
-    line-height: 2;
-}
 
 @media (max-width: 768px) {
-  #vertical-text {
-    writing-mode: horizontal-tb;
-    text-align: center;
-    transform: rotate(0deg);
-    font-size: 2rem;
+    #manage {
+      margin-top:1rem;
+    }
+
+    #about-text {
+        width: 100%;
+    }
   }
-  .vertical-line {
-        border-left: none; 
-        border-top: 1px solid #000000; 
-        width: 100%; 
-        height: auto; 
-  }
-}
