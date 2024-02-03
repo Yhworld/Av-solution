@@ -14,7 +14,6 @@
         100% { transform: translateX(-400%); }  /* Adjusted end position */
     }
 }
-
 /* @media (min-width: 769px) {
     #test {
         flex-wrap: wrap; 

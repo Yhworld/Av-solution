@@ -1,34 +1,29 @@
 import React from "react";
 import "./hero.css";
 import photographer from "../../assets/images/photographer.svg";
+import Testimonial from "../Testimonial/Testimonial";
 
 function Hero() {
   return (
-    <div id="hero" className="container flex flex-col-reverse md:flex-row items-center md:justify-between px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+    <div id="hero" className="flex flex-col items-center justify-center px-6 mx-auto space-y-0 md:space-y-0">
       <div className="flex flex-col mb-32 space-y-12 md:w-1/2 md:mt-32">
-        <h1 className="font-bold text-4xl text-center md:text-5xl md:text-left">
-          Where Every Frame Tells a Story Your AV Experience Starts Here.
+        <h1 className="font-bold text-4xl text-white text-center md:text-6xl ">
+        IMMERSE YOURSELF IN SOUND AND VISION
         </h1>
-        <p className=" text-center text-slate-500 md:text-left">
+        <p className=" text-center text-slate-200">
           Embark on a journey where technology and imagination converge. Your AV
           experience starts here —discover the possibilities today.
         </p>
-        <div className="flex justify-center md:justify-start">
-          <a href="#_" class="relative inline-block text-lg group">
-            <span class="relative z-10 block px-8 py-3 overflow-hidden font-medium leading-tight text-white transition-colors duration-300 ease-out border-2 border-gray-900 group-hover:text-slate-900">
-              <span class="absolute inset-0 w-full h-full px-5 py-3 r bg-slate-900"></span>
-              <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-white group-hover:-rotate-180 ease"></span>
-              <span class="relative">Get a Quote</span>
-            </span>
-            <span
-              class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-white group-hover:mb-0 group-hover:mr-0"         
-            ></span>
-          </a>
+        <div className="flex justify-center">
+        <a href="#_" class="flex items-center justify-center px-16 py-4 text-base font-medium leading-6 text-gray-500 whitespace-no-wrap bg-white border-2 border-transparent rounded-full shadow-sm hover:bg-transparent hover:text-white hover:border-white focus:outline-none">
+Learn More
+</a>
         </div>
       </div>
-      <div id="hero-pic" className="md:w-1/2">
+      <Testimonial />
+      {/* <div id="hero-pic" className="md:w-1/2">
         <img src={photographer} alt="" loading="lazy" />
-      </div>
+      </div> */}
     </div>
   );
 }
