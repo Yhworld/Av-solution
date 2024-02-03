@@ -7,7 +7,6 @@ function HomePage() {
   return (
     <div>
       <Hero />
-      <Testimonial />
       <About />
     </div>
   )
