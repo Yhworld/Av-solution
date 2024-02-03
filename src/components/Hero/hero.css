@@ -9,3 +9,9 @@
     min-height: calc(100vh - 82px);
     background-position: 10% 20%;
 }
+
+@media (max-width: 768px) {
+    #content {
+      margin-top:3rem;
+    }
+  }
