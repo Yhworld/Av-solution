@@ -1,7 +1,7 @@
 import React from "react";
 import "./hero.css";
 import photographer from "../../assets/images/photographer.svg";
-import Testimonial from "../Testimonial/Testimonial";
+import Brands from "../Brands/Brands";
 
 function Hero() {
   return (
@@ -26,7 +26,7 @@ function Hero() {
           </a>
         </div>
       </div>
-      <Testimonial />
+      <Brands />
     </div>
   );
 }
