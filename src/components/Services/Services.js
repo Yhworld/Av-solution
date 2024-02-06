@@ -57,7 +57,7 @@ import './services.css'
 
 function Services() {
   return (
-    <section className="container relative mx-auto p-4 mb-16">
+    <section className="container relative mx-auto p-4 pb-28 mt-20">
     <div className='flex flex-col items-center'>
     <h2 className="text-2xl text-center font-medium md:text-6xl mt-12 md:mt-4">
       Our<span>Services</span>
@@ -67,7 +67,7 @@ function Services() {
 
     <div
         id="about-sub"
-        className="container mt-8 flex flex-col px-4 md:mt-28 md:items-center md:space-x-8 md:justify-between mx-auto space-y-12 md:flex-row md:space-y-0"
+        className="container mt-8 flex flex-col md:mt-28 md:items-center md:space-x-8 md:justify-between mx-auto space-y-12 md:flex-row md:space-y-0"
       >
 {data.map(service => { return (
 
