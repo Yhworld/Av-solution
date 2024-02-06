@@ -3,12 +3,12 @@ import service1 from '../../assets/Services/service1.png'
 import service3 from '../../assets/Services/service3.jpg'
 import service4 from '../../assets/Services/service4.jpg'
 import service5 from '../../assets/Services/service5.jpg'
-import { SiAudiomack } from "react-icons/si";
+
 
 
 const data = [
     {
-      image: <SiAudiomack /> ,
+      image: service1,
       title: 'Audio Systems',
       service: 'Service 1',
       description: 'We provide expert audio system consultation and installation services for homes, businesses, and events, we ensure a top-quality listening experience..',
