@@ -23,10 +23,11 @@ function Testimonial() {
             alt="Man"
             src={review.image}
             class="h-14 w-14 rounded-full object-cover"
+            loading='lazy'
           />
 
           <div>
-            <div class="flex justify-center gap-0.5 text-green-500">
+            <div class="flex justify-center gap-0.5 text-yellow-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"

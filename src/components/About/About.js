@@ -10,9 +10,6 @@ function About() {
             <div class="flex items-center -mx-3 sm:-mx-4">
               <div class="w-full px-3 sm:px-4 xl:w-1/2">
                 <div class="py-3 sm:py-4">
-                  <img src={aboutimg} alt="" class="w-full rounded-2xl" />
-                </div>
-                <div class="py-3 sm:py-4">
                   <img
                     src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-2.jpg"
                     alt=""

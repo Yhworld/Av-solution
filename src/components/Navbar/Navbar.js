@@ -31,11 +31,10 @@ function Navbar() {
       {isOpen && (
         <div className="md:hidden">
           <div id="menu" className="relative inset-0 z-50 flex flex-col items-center justify-center bg-white font-bold py-8 space-y-6 drop-shadow-md">
-            <a href="#" className="hover:text-darkGrayishBlue">Pricing</a>
-            <a href="#" className="hover:text-darkGrayishBlue">Product</a>
+            <a href="#" className="hover:text-darkGrayishBlue">Home</a>
             <a href="#" className="hover:text-darkGrayishBlue">About Us</a>
-            <a href="#" className="hover:text-darkGrayishBlue">Careers</a>
-            <a href="#" className="hover:text-darkGrayishBlue">Community</a>
+            <a href="#" className="hover:text-darkGrayishBlue">Services</a>
+            <a href="#" className="hover:text-darkGrayishBlue">Contact us</a>
           </div>
         </div>
       )}

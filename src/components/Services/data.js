@@ -1,7 +1,7 @@
 // data.js
 import service1 from '../../assets/Services/service1.png'
 import service3 from '../../assets/Services/service3.jpg'
-import service4 from '../../assets/Services/service4.jpg'
+import service2 from '../../assets/Services/service2.png'
 import service5 from '../../assets/Services/service5.jpg'
 import service6 from '../../assets/Services/service6.jpg'
 
@@ -22,7 +22,7 @@ const data = [
       link: 'service3',
     },
     {
-      image: service4,
+      image: service2,
       title: 'Videography & Editing',
       service: 'S',
       description: 'we\'re experts at creating captivating visual content that sets your brand apart. Whether it\'s promotional videos or product showcases',
@@ -32,7 +32,7 @@ const data = [
       image: service5,
       title: 'Networking',
       service: 'Service 4',
-      description: 'We specialize in providing top-tier networking consultation and installation services.Whether you need to enhance your home network.',
+      description: 'We specialize in providing top-tier networking consultation and installation services, to enhance your network experience.',
       link: 'service3',
     }
     ,

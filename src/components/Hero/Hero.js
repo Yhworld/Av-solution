@@ -8,6 +8,7 @@ function Hero() {
     <div
       id="hero"
       className="flex flex-col items-center justify-center px-6 mx-auto space-y-0 md:space-y-0"
+      loading="lazy"
     >
       <div className="flex flex-col mb-32 space-y-12 md:w-1/2 mt-32">
         <h1 className="font-bold text-4xl text-white text-center md:text-6xl ">

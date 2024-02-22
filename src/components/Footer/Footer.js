@@ -7,32 +7,22 @@ function Footer() {
         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
             <div class="px-5 py-2">
                 <a href="#" class="text-base leading-6 text-gray-500 hover:text-white">
+                    Home
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-white">
                     About
                 </a>
             </div>
             <div class="px-5 py-2">
                 <a href="#" class="text-base leading-6 text-gray-500 hover:text-white">
-                    Blog
-                </a>
-            </div>
-            <div class="px-5 py-2">
-                <a href="#" class="text-base leading-6 text-gray-500 hover:text-white">
-                    Team
-                </a>
-            </div>
-            <div class="px-5 py-2">
-                <a href="#" class="text-base leading-6 text-gray-500 hover:text-white">
-                    Pricing
+                    Services
                 </a>
             </div>
             <div class="px-5 py-2">
                 <a href="#" class="text-base leading-6 text-gray-500 hover:text-white">
                     Contact
-                </a>
-            </div>
-            <div class="px-5 py-2">
-                <a href="#" class="text-base leading-6 text-gray-500 hover:text-white">
-                    Terms
                 </a>
             </div>
         </nav>
@@ -69,7 +59,7 @@ function Footer() {
             </a>
         </div>
         <p class="mt-8 text-base leading-6 text-center text-gray-400">
-            © 2024 SomeCompany, Inc. All rights reserved.
+            © 2024 AVS, Inc. All rights reserved.
         </p>
     </div>
 </section>
