@@ -1,19 +1,19 @@
 const data = [
     {
         name:"Home",
-        link: "/"
+        link: "home"
     },
     {
         name:"About",
-        link: "/"
+        link: "About"
     },
     {
         name:"Services",
-        link: "/"
+        link: "services"
     },
     {
         name:"Contact",
-        link: "/"
+        link: "contact"
     },
 
 ]

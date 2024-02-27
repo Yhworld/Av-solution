@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import logo from "../../assets/images/logo.webp";
-import './navbar.css';
-import data from './data2'
+import "./navbar.css";
+import data from "./data2";
+import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,16 +15,39 @@ function Navbar() {
   return (
     <div className="container  mx-auto  sticky top-0 z-10 p-4 bg-white">
       <div className="flex items-center justify-between">
-        <img src={logo} alt="Logo" className="logo" />
+        <NavLink to="/">
+        <img src={logo} alt="Logo" className="logo" /></NavLink>
         <div className="hidden space-x-8 md:flex">
-          {data.map(navigation => { return (<a href="/" className="hover:text-slate-500">{navigation.name}</a>)})}
-          
+          {data.map((navigation) => {
+            return (
+              <NavLink
+                to={navigation.link}
+                spy={true}
+                smooth={true}
+                duration={800}
+                className="nav-link font-medium"
+                style={{ cursor: "pointer" }}
+              >
+                {navigation.name}
+              </NavLink>
+            );
+          })}
+
           {/* Add more navigation links here */}
         </div>
-        <a href="#_" className="hidden md:inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-900 rounded-full hover:bg-gray-500 focus:shadow-outline focus:outline-none">
+        <a
+          href="#_"
+          className="hidden md:inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-900 rounded-full hover:bg-gray-500 focus:shadow-outline focus:outline-none"
+        >
           Get a Quotation
         </a>
-        <button id="menu-btn" className={`pr-8 block hamburger md:hidden focus:outline-none ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <button
+          id="menu-btn"
+          className={`pr-8 block hamburger md:hidden focus:outline-none ${
+            isOpen ? "open" : ""
+          }`}
+          onClick={toggleMenu}
+        >
           <span className="hamburger-top"></span>
           <span className="hamburger-middle"></span>
           <span className="hamburger-bottom"></span>
@@ -30,11 +55,50 @@ function Navbar() {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <div id="menu" className="relative inset-0 z-50 flex flex-col items-center justify-center bg-white font-bold py-8 space-y-6 drop-shadow-md">
-            <a href="#" className="hover:text-darkGrayishBlue">Home</a>
-            <a href="#" className="hover:text-darkGrayishBlue">About Us</a>
-            <a href="#" className="hover:text-darkGrayishBlue">Services</a>
-            <a href="#" className="hover:text-darkGrayishBlue">Contact us</a>
+          <div
+            id="menu"
+            className="relative inset-0 z-50 flex flex-col items-center justify-center bg-white font-bold py-8 space-y-6 drop-shadow-md"
+          >
+            <Link
+                to="Home"
+                spy={true}
+                smooth={true}
+                duration={800}
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+              >
+                Home
+              </Link>
+              <Link
+                to="About"
+                spy={true}
+                smooth={true}
+                duration={800}
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+              >
+                About
+              </Link>
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                duration={800}
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+              >
+                Services
+              </Link>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={800}
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+              >
+                Contact
+              </Link>
           </div>
         </div>
       )}

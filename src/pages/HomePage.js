@@ -11,7 +11,7 @@ function HomePage() {
     <div>
       <Hero />
       <About />
-      <Services />
+      <Services/>
       <Testimonial />
       <Contact />
       <Footer />

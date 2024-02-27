@@ -12,28 +12,28 @@ const data = [
       title: 'Audio Systems',
       service: 'Service 1',
       description: 'We provide expert audio system consultation and installation services for homes, businesses, and events, we ensure a top-quality listening experience..',
-      link: 'service1',
+      link: '/audioservice',
     },
     {
       image: service3,
       title: 'Video Production',
       service: 'Service 2',
       description: 'We specialize in video production services, serving a diverse range of clients and projects with game changing cutting-edge technology,',
-      link: 'service3',
+      link: '/videoservice',
     },
     {
       image: service2,
       title: 'Videography & Editing',
       service: 'S',
       description: 'we\'re experts at creating captivating visual content that sets your brand apart. Whether it\'s promotional videos or product showcases',
-      link: 'service3',
+      link: '/editing',
     },
     {
       image: service5,
       title: 'Networking',
       service: 'Service 4',
       description: 'We specialize in providing top-tier networking consultation and installation services, to enhance your network experience.',
-      link: 'service3',
+      link: '/networking',
     }
     ,
     // Add more data as needed
