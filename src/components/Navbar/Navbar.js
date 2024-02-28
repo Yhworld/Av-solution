@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import logo from "../../assets/images/logo.webp";
 import "./navbar.css";
 import data from "./data2";
-import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom"
 
 function Navbar() {
@@ -22,9 +21,6 @@ function Navbar() {
             return (
               <NavLink
                 to={navigation.link}
-                spy={true}
-                smooth={true}
-                duration={800}
                 className="nav-link font-medium"
                 style={{ cursor: "pointer" }}
               >
@@ -59,7 +55,7 @@ function Navbar() {
             id="menu"
             className="relative inset-0 z-50 flex flex-col items-center justify-center bg-white font-bold py-8 space-y-6 drop-shadow-md"
           >
-            <Link
+            <NavLink
                 to="Home"
                 spy={true}
                 smooth={true}
@@ -68,8 +64,8 @@ function Navbar() {
                 style={{ cursor: "pointer" }}
               >
                 Home
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to="About"
                 spy={true}
                 smooth={true}
@@ -78,8 +74,8 @@ function Navbar() {
                 style={{ cursor: "pointer" }}
               >
                 About
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to="services"
                 spy={true}
                 smooth={true}
@@ -88,8 +84,8 @@ function Navbar() {
                 style={{ cursor: "pointer" }}
               >
                 Services
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to="contact"
                 spy={true}
                 smooth={true}
@@ -98,7 +94,7 @@ function Navbar() {
                 style={{ cursor: "pointer" }}
               >
                 Contact
-              </Link>
+              </NavLink>
           </div>
         </div>
       )}
