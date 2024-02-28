@@ -6,11 +6,13 @@ import { Route, Routes } from 'react-router-dom';
 import Video from './components/Features/Video';
 import Networking from './components/Features/Networking';
 import Editing from './components/Features/Editing';
+import ScrollToTop from './pages/ScrollToTop';
 
 function App() {
   return (
     <>
     <Navbar />
+    <ScrollToTop />
     <Routes>
       <Route exact  path="/" element={ <HomePage /> } ></Route>
       <Route exact  path="/audioservice" element={ <Audio /> } ></Route>
