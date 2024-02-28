@@ -8,10 +8,11 @@ function Services() {
   return (
     <section id="services" className="container relative mx-auto p-4 pb-36 mt-32">
     <div className='flex flex-col items-center'>
-    <h2 className="text-center text-1xl font-bold text-primary">
-      WHAT WE OFFER
+    <h2 className="text-center font-semibold text-primary text-dark sm:text-1xl">
+      What We Offer
     </h2>
-    <p className=' mt-6 text-center'>Explore Our Diverse Range of Tailored Audiovisual Solutions</p>
+    <p className='text-dark-6 mt-6 text-4xl font-bold text-center'>Range of Tailored Audiovisual Solutions </p>
+    <p className='text-dark-6 text-4xl font-bold text-center'>Designed to Suit Your Every Need</p>
     </div>
 
     <div
