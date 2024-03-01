@@ -7,6 +7,8 @@ import Video from './components/Features/Video';
 import Networking from './components/Features/Networking';
 import Editing from './components/Features/Editing';
 import ScrollToTop from './pages/ScrollToTop';
+import ContactPage from './components/Contact/ContactPage';
+import AboutPage from './components/About/AboutPage';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route exact  path="/videoservice" element={ <Video /> } ></Route>
       <Route exact  path="/networking" element={ <Networking /> } ></Route>
       <Route exact  path="/editing" element={ <Editing /> } ></Route>
+      <Route exact  path="/contact" element={ <ContactPage /> } ></Route>
+      <Route exact  path="/about" element={ <AboutPage /> } ></Route>
     </Routes>
     </>
   );
