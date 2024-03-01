@@ -58,20 +58,16 @@ function Video() {
                 01
               </span>
               <h2 className="mb-5 text-3xl font-bold text-dark  sm:text-[40px]/[48px]">
-                Coporate Videos
+                Corporate Videos
               </h2>
               <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                "We specialize in audio, video and networking consultation and
-                installation. Focused on tech and creativity, we tailor
-                solutions for a seamless, high-quality experience, turning your
-                ideas into reality." We have one goal in mind, the user
-                satisfaction.
+              Elevate your brand with our professional corporate video services. Our team specializes in creating compelling video content tailored to showcase your company's story, values, and products. From concept development to production and editing, we deliver high-quality corporate videos that engage and captivate your audience. Whether you need promotional videos, training materials, or event coverage, we provide customized solutions to meet your specific needs. Trust us to bring your brand to life with dynamic visuals and impactful storytelling.
               </p>
               <p className="mb-8 text-base text-body-color dark:text-dark-6"></p>
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap items-center justify-between -mx-4 md:flex-row-reverse mt-12">
+        <div className="flex flex-wrap items-center justify-between -mx-4 md:flex-row-reverse mt-16 mb-16">
         <div className="w-full px-4 lg:w-6/12">
             <div className="flex items-center -mx-3 sm:-mx-4">
               <div className="w-full px-3 sm:px-4 xl:w-1/2">
@@ -105,11 +101,7 @@ function Video() {
                 Event Coverage
               </h2>
               <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                "We specialize in audio, video and networking consultation and
-                installation. Focused on tech and creativity, we tailor
-                solutions for a seamless, high-quality experience, turning your
-                ideas into reality." We have one goal in mind, the user
-                satisfaction.
+              Capture every moment of your event with our professional event coverage services. From corporate conferences to weddings and concerts, we specialize in documenting key highlights and behind-the-scenes action. With photography, videography, live streaming, and social media coverage, we ensure comprehensive and engaging event documentation. Trust us to preserve the memories and showcase the success of your event with dynamic coverage.
               </p>
               <p className="mb-8 text-base text-body-color dark:text-dark-6"></p>
             </div>
@@ -149,11 +141,7 @@ function Video() {
                 Promotional Videos
               </h2>
               <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                "We specialize in audio, video and networking consultation and
-                installation. Focused on tech and creativity, we tailor
-                solutions for a seamless, high-quality experience, turning your
-                ideas into reality." We have one goal in mind, the user
-                satisfaction.
+              Boost your brand with captivating promotional videos tailored to your needs. Our expert team specializes in crafting engaging video content that showcases your products, services, and brand story. From concept development to production and editing, we create high-quality videos that resonate with your target audience. Whether it's for social media, website, or marketing campaigns, we deliver compelling promotional videos that drive engagement and conversions. Trust us to bring your vision to life and elevate your brand with impactful storytelling and stunning visuals.
               </p>
               <p className="mb-8 text-base text-body-color dark:text-dark-6"></p>
             </div>

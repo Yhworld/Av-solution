@@ -33,7 +33,7 @@ function Networking() {
               <div className="w-full px-3 sm:px-4 xl:w-1/2">
                 <div className="py-3 sm:py-4">
                   <img
-                    src="https://images.pexels.com/photos/7691691/pexels-photo-7691691.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    src="https://images.pexels.com/photos/343457/pexels-photo-343457.jpeg?auto=compress&cs=tinysrgb&w=600"
                     loading='lazy'
                     alt=""
                     className="w-full rounded-2xl"
@@ -43,7 +43,7 @@ function Networking() {
               <div className="w-full px-3 sm:px-4 xl:w-1/2">
                 <div className="relative z-10 my-4">
                   <img
-                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&w=600"
                     loading='lazy'
                     alt=""
                     className="w-full rounded-2xl"
@@ -61,17 +61,13 @@ function Networking() {
                 Network Installation
               </h2>
               <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                "We specialize in audio, video and networking consultation and
-                installation. Focused on tech and creativity, we tailor
-                solutions for a seamless, high-quality experience, turning your
-                ideas into reality." We have one goal in mind, the user
-                satisfaction.
+              Enhance your connectivity with our professional network installation services. Our experienced team specializes in designing and implementing robust network solutions tailored to your business needs. From small offices to large enterprises, we provide comprehensive installation services that ensure seamless connectivity and optimal performance. Whether it's setting up wired or wireless networks, configuring routers, switches, or access points, we deliver reliable and secure network infrastructure. Trust us to streamline your operations and empower your business with efficient network installation services.
               </p>
               <p className="mb-8 text-base text-body-color dark:text-dark-6"></p>
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap items-center justify-between -mx-4 md:flex-row-reverse mt-12">
+        <div className="flex flex-wrap items-center justify-between -mx-4 md:flex-row-reverse mt-16 mb-16">
         <div className="w-full px-4 lg:w-6/12">
             <div className="flex items-center -mx-3 sm:-mx-4">
               <div className="w-full px-3 sm:px-4 xl:w-1/2">
@@ -102,14 +98,10 @@ function Networking() {
                 02
               </span>
               <h2 className="mb-5 text-3xl font-bold text-dark  sm:text-[40px]/[48px]">
-                Event Coverage
+              Wired and Wireless Networking Solutions
               </h2>
               <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                "We specialize in audio, video and networking consultation and
-                installation. Focused on tech and creativity, we tailor
-                solutions for a seamless, high-quality experience, turning your
-                ideas into reality." We have one goal in mind, the user
-                satisfaction.
+              Optimize your connectivity with our comprehensive wired and wireless networking solutions. Our expert team specializes in designing and implementing reliable network infrastructures tailored to your specific needs. From wired Ethernet setups to cutting-edge wireless configurations, we provide seamless connectivity solutions for businesses of all sizes. Trust us to enhance your network performance and empower your operations with our professional networking services.
               </p>
               <p className="mb-8 text-base text-body-color dark:text-dark-6"></p>
             </div>
@@ -146,14 +138,10 @@ function Networking() {
                 03
               </span>
               <h2 className="mb-5 text-3xl font-bold text-dark  sm:text-[40px]/[48px]">
-                Promotional Videos
+              Security and Access Control:
               </h2>
               <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                "We specialize in audio, video and networking consultation and
-                installation. Focused on tech and creativity, we tailor
-                solutions for a seamless, high-quality experience, turning your
-                ideas into reality." We have one goal in mind, the user
-                satisfaction.
+              Enhance security with our tailored access control solutions. We design and implement robust systems, including surveillance cameras and intrusion detection. Trust us to safeguard your premises effectively, ensuring peace of mind and protection for your assets.
               </p>
               <p className="mb-8 text-base text-body-color dark:text-dark-6"></p>
             </div>
