@@ -16,6 +16,11 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    setIsDropdownOpen(false); // Close the dropdown when menu is closed
+  };
+
   return (
     <nav className="container  mx-auto  bg-white border-gray-200 sticky top-0 z-10">
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -30,7 +35,7 @@ function Navbar() {
       <button
         data-collapse-toggle="navbar-dropdown"
         type="button"
-        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden"
         aria-controls="navbar-dropdown"
         aria-expanded={isMenuOpen ? "true" : "false"}
         onClick={toggleMenu}
@@ -61,9 +66,11 @@ function Navbar() {
         <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
           <li>
             <NavLink
-              className="block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+              className="block py-2 px-3 text-black rounded md:bg-transparent md:p-0"
               to="/"
               aria-current="page"
+              onClick={closeMenu}
+              activeClassName="text-blue-700"
             >
               Home
             </NavLink>
@@ -71,7 +78,9 @@ function Navbar() {
           <li>
             <NavLink
               to="/about"
-              className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700  md:dark:hover:bg-transparent"
+              className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+              onClick={closeMenu}
+              activeClassName="text-blue-700"
             >
               About
             </NavLink>
@@ -81,7 +90,7 @@ function Navbar() {
               <button
                 id="dropdownNavbarLink"
                 data-dropdown-toggle="dropdownNavbar"
-                className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto md:dark:hover:text-blue-500 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
                 onClick={toggleDropdown}
               >
                 Services{" "}
@@ -114,7 +123,9 @@ function Navbar() {
                   <li>
                     <NavLink
                       to="/audioservice"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      className="block px-4 py-2 hover:bg-gray-100 "
+                      onClick={closeMenu}
+                      activeClassName="text-blue-700"
                     >
                       Audio Services
                     </NavLink>
@@ -122,7 +133,9 @@ function Navbar() {
                   <li>
                     <NavLink
                       to="/videoservice"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      className="block px-4 py-2 hover:bg-gray-100 "
+                      onClick={closeMenu}
+                      activeClassName="text-blue-700"
                     >
                       Video Production
                     </NavLink>
@@ -130,7 +143,9 @@ function Navbar() {
                   <li>
                     <NavLink
                       to="/editing" 
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      className="block px-4 py-2 hover:bg-gray-100 "
+                      onClick={closeMenu}
+                      activeClassName="text-blue-700"
                     >
                       Videography & Editing
                     </NavLink>
@@ -138,7 +153,9 @@ function Navbar() {
                   <li>
                     <NavLink
                       to="/networking"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      className="block px-4 py-2 hover:bg-gray-100 "
+                      onClick={closeMenu}
+                      activeClassName="text-blue-700"
                     >
                       Networking
                     </NavLink>
@@ -150,7 +167,9 @@ function Navbar() {
           <li>
             <NavLink
               to="/contact"
-              className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+              className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              onClick={closeMenu}
+              activeClassName="text-blue-700"
             >
               Contact
             </NavLink>
