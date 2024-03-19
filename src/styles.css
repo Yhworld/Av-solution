@@ -9,9 +9,19 @@
 }
 
 body {
-    /* background-image: url('../src/assets/images/background.jpg');
-    background-repeat: no-repeat;
-    background-size: 800px; */
     font-family: var(--primary-font);
-    /* background-position: 90% 5%; */
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  #audio-features, #editing-features, #networking-features, #video-features, #contact, #about, #main-header, #test{
+    animation: fadeIn 1.7s ease-in-out;
+  }
