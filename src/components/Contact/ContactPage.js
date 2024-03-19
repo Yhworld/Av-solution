@@ -1,31 +1,45 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Footer from "../Footer/Footer";
 
 function ContactPage() {
-    const form = useRef();
+  const form = useRef();
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs
-        .sendForm("service_4mtguag", "template_rreuvet", form.current, {
-          publicKey: "MRD9reDEIVCDMsfld",
-        })
-        .then(
-          () => {
-            console.log("SUCCESS!");
-            form.current.reset();
-          },
-          (error) => {
-            console.log("FAILED...", error.text);
-          }
-        );
-    };
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_4mtguag", "template_rreuvet", form.current, {
+        publicKey: "MRD9reDEIVCDMsfld",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setShowSuccessAlert(true); // Show the success alert
+          form.current.reset();
+          setTimeout(() => {
+            setShowSuccessAlert(false); // Hide the success alert after some time
+          }, 5000); // Adjust the time as needed
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <>
       <section className="bg-white" id="contact">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        {showSuccessAlert && ( // Display the success alert when showSuccessAlert is true
+            <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+              <strong className="font-bold">Success!</strong>
+              <span className="block sm:inline"> Your message has been sent successfully.</span>
+              <span className="absolute top-0 bottom-0 right-0 px-4 py-3" onClick={() => setShowSuccessAlert(false)}>
+                <svg className="fill-current h-6 w-6 text-green-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.354 5.646a.5.5 0 0 1 0 .708L10.707 10l3.647 3.646a.5.5 0 0 1-.708.708L10 10.707l-3.646 3.647a.5.5 0 0 1-.708-.708L9.293 10 5.646 6.354a.5.5 0 0 1 .708-.708L10 9.293l3.646-3.647a.5.5 0 0 1 .708 0z"/></svg>
+              </span>
+            </div>
+          )}
           <div className="mb-4">
             <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
               {/* <p className="text-base font-semibold uppercase tracking-wide text-black dark:text-black">
@@ -42,7 +56,7 @@ function ContactPage() {
           <div className="flex items-stretch justify-center">
             <div className="grid md:grid-cols-2">
               <div className="h-full pr-6">
-                <p className="mt-3 mb-12 text-lg text-gray-600">
+                <p className="mt-3 mb-12 text-lg text-gray-700">
                   Our contact page makes it easy for you to reach
                   out to us. Whether you have questions about our services, need
                   assistance with a project, or simply want to say hello, we're
@@ -126,7 +140,7 @@ function ContactPage() {
                           id="name"
                           autocomplete="given-name"
                           placeholder="Your name"
-                          className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
+                          className="mb-2 w-full rounded-md border border-gray-600 py-2 pl-2 pr-4 shadow-md sm:mb-0"
                           name="user_name"
                         />
                       </div>
@@ -140,7 +154,7 @@ function ContactPage() {
                           id="email"
                           autocomplete="email"
                           placeholder="Your email address"
-                          className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
+                          className="mb-2 w-full rounded-md border border-gray-600 py-2 pl-2 pr-4 shadow-md sm:mb-0"
                           name="user_email"
                         />
                       </div>
@@ -156,7 +170,7 @@ function ContactPage() {
                         cols="30"
                         rows="5"
                         placeholder="Write your message..."
-                        className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
+                        className="mb-2 w-full rounded-md border border-gray-600 py-2 pl-2 pr-4 shadow-md sm:mb-0"
                       ></textarea>
                     </div>
                   </div>
