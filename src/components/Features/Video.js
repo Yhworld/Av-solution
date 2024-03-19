@@ -2,6 +2,7 @@ import React from 'react'
 import './features.scss'
 import Footer from '../Footer/Footer'
 import Cta from '../CTA/Cta'
+import { Link } from "react-router-dom";
 
 function Video() {
   return (
@@ -16,12 +17,12 @@ function Video() {
           experience starts here —discover the possibilities today.
         </p>
         <div className="flex justify-center">
-          <a
-            href="#_"
+        <Link
+            to="/contact"
             className="flex items-center justify-center px-16 py-4 text-base font-medium leading-6 text-gray-500 whitespace-no-wrap bg-white border-2 border-transparent rounded-full shadow-sm hover:bg-transparent hover:text-white hover:border-white focus:outline-none"
           >
             Get in Touch
-          </a>
+          </Link>
         </div>
     </div>
     </section>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 let headerPic = require("../../assets/Features/Webinar1-ezgif.com-optimize.gif");
 
 function Cta() {
@@ -8,7 +9,7 @@ function Cta() {
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
       Craft a compelling story. Let's discuss your video production, audio, and editing needs.
       </h2>
-      <a href="#" class="mt-8 text-black bg-white hover:bg-gray-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-8 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Contact Us</a>
+      <Link to="/contact" class="mt-8 text-black bg-white hover:bg-black border hover:border-white hover:text-white focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-8 py-2.5 mr-2 mb-2  focus:outline-none ">Contact Us</Link>
       </div>
     </section>
   );
